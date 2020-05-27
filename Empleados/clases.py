@@ -1,4 +1,5 @@
-from listas import listaEmpleados
+global listaEmpleados 
+listaEmpleados = list()
 
 class empleado:
     id = ""
@@ -12,8 +13,6 @@ def agregarEmpleado():
     nuevoEmpleado.id = input("Ingrese ID de empleado:")
     nuevoEmpleado.nombre = input("Ingrese nombre de empleado:")
     nuevoEmpleado.edad = input("Ingrese edad de empleado:")
-
-    listaEmpleados.append(nuevoEmpleado);
 
 def borrarEmpleado():
     id = input("Ingrese ID de empleado a borrar:")
