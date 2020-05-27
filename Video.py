@@ -52,6 +52,23 @@ class Video:
                     lista.append(valores)
                     input("Agregaste un registro, enter para continuar")
 
+                elif opcion == 2:
+                    print(f"\n{'idVideo':<25}{'nombre':<25}{'url':<25}{'fechaPubli':<25}")
+                    
+                    for v1 in lista:
+                         print(f"{v1.idVideo:<25}{v1.nombre:<25}{v1.url:<25}{v1.fechaPubli:<25}")
+                    
+                    if lista == []:
+                        input("Actualmente esta vacia, enter para continuar")
+                        
+                    else:
+                        clave = int(input("Clave:"))
+                        for remover in lista:
+                            if remover.idVideo == clave:
+                                lista.remove(Video(clave,None,None,None))
+                            input("Registro eliminado, enter para continuar")
+                            
+
 
 
     
