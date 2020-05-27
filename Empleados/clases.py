@@ -4,7 +4,7 @@ listaEmpleados = list()
 class empleado:
     id = ""
     nombre = ""
-    edad = 0
+    direccion = 0
 
 def agregarEmpleado():
     print("---REGISTRO DE EMPLEADO---")
@@ -12,7 +12,7 @@ def agregarEmpleado():
     
     nuevoEmpleado.id = input("Ingrese ID de empleado:")
     nuevoEmpleado.nombre = input("Ingrese nombre de empleado:")
-    nuevoEmpleado.edad = input("Ingrese edad de empleado:")
+    nuevoEmpleado.direccion = input("Ingrese direccion de empleado:")
 
 def borrarEmpleado():
     id = input("Ingrese ID de empleado a borrar:")
@@ -24,4 +24,4 @@ def modificarEmpleado():
 def consultarEmpleado():
     print("Lista de todos los empleados:")
     for a in listaEmpleados:
-        print(a.id," - ", a.nombre, " - ", a.edad)
+        print(a.id," - ", a.nombre, " - ", a.direccion)
