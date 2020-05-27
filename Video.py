@@ -34,10 +34,14 @@ class Video:
         self.__fechaPubli = valor
 
     def Menu(self):
-        lista[]
+        lista = []
         while True:
             try:
-                opcion = int(input("1.Agregar\ 2.Borrar\ 3.Modificar\ 4.Consultar\ 5.Salir\ n.¿Que opcion eliges?:"))
+                opcion=int(input("1.Agregar\2.Borrar\3.Modificar\4.Consultar\5.Salir\n.¿Que opcion eliges?:"))
+            
+            except ValueError:
+                print("Error en la eleccion")
+                
                 if opcion == 1:
                     self.__idVideo = self.__idVideo+1
                     self.__nombre = input("Ingresa el nombre del video: ")
