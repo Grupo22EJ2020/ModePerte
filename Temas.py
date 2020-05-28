@@ -2,15 +2,31 @@ global listaTemas
 listaTemas = list()
 
 class tema:
-    id = ""
-    nombre = ""
+    def __init__(self, idTema, Nombre):
+        self.idTema = idTema
+        self.Nombre = Nombre
+
+    @property
+    def idTema(self):
+        return self.__idTema
+
+    @idTema.setter
+    def idTema(self, valor):
+        self.__idTema = valor
+
+    @property
+    def nombre(self):
+        return self.__nombre
+
+    @nombre.setter
+    def nombre(self, valor):
+        self.__nombre = valor
 
 def agregarTema():
     print("---REGISTRO DE TEMA---")
-    nuevoTema = tema()
-
-    nuevoTema.id = input("Ingrese ID de tema:")
-    nuevoTema.nombre = input("Ingrese nombre del tema:")
+    
+    tema.idTema = input("Ingrese ID de tema:")
+    tema.Nombre = input("Ingrese nombre del tema:")
 
 def borrarTema():
     id = input("Ingrese ID del tema a borrar:")
