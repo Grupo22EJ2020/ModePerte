@@ -24,22 +24,8 @@ class Curso_Tema:
     def idTema (self, valor):
         self.__idTema = valor
 
-    def Menu(self):
-        lista = []
-        while True:
-            try:
-                opcion = init(input("1.Agregar\2.Borrar\3.Modificar\4.Consultar\5.Salir\n.¿Que opcion eliges?:"))
-            
-            except ValueError:
-                print("Error en la eleccion, introduce un numero")
-            
-            if opcion == 1:
-                
-
-    
-
-    
-
     
 
 
+         
+              
