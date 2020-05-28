@@ -51,7 +51,7 @@ class Video:
                     valores = Video(self.__idVideo, self.__nombre, self.__url, self.__fechaPubli)
                     lista.append(valores)
                     input("Agregaste un registro, enter para continuar")
-
+                    
                 elif opcion==2:
                     print(f"\n{'idVideo':<25}{'nombre':<25}{'url':<25}{'fechaPubli':<25}")
                     
